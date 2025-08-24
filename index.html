@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 급식</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-2xl text-center w-full max-w-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        <h1 class="text-4xl font-extrabold mb-8 text-gray-800">오늘의 급식</h1>
+        <div class="mb-6 flex space-x-2">
+            <input type="date" id="mealDate" value="2025-08-25" class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+            <button id="searchBtn" class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out font-semibold shadow-md">
+                급식 조회
+            </button>
+        </div>
+        <div id="mealInfo" class="mt-8 pt-6 border-t border-gray-200 text-left space-y-4">
+            <!-- 급식 정보가 여기에 표시됩니다. -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
